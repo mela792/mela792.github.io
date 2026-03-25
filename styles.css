@@ -700,7 +700,7 @@ h1 {
 }
 
 .blog-page .blog-layout {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
 }
 
@@ -708,6 +708,9 @@ h1 {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background: linear-gradient(180deg, #fffafc 0%, #fdf2f6 100%);
+  border: 1px solid rgba(219, 168, 184, 0.32);
+  box-shadow: 0 18px 36px rgba(93, 74, 87, 0.08);
 }
 
 .blog-page .post-card h2,
@@ -720,8 +723,23 @@ h1 {
   flex-grow: 1;
 }
 
+.post-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.news-date {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
 .blog-page .text-link {
   margin-top: 20px;
+  color: var(--accent);
 }
 
 .featured-post {
